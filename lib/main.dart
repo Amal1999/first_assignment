@@ -71,11 +71,11 @@ class MyHomePage extends StatelessWidget {
       body: SafeArea(
         child:SingleChildScrollView(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            //crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(height: MediaQuery.of(context).size.width*0.08,),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width*0.04),
+                padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width*0.04),
 
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -111,7 +111,8 @@ class MyHomePage extends StatelessWidget {
               SizedBox(height: MediaQuery.of(context).size.width*0.04,),
 
               Container(
-                  margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width*0.07,
+
+                  padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width*0.07,
                       vertical: MediaQuery.of(context).size.width*0.04),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -139,8 +140,10 @@ class MyHomePage extends StatelessWidget {
                   )
               ),
               Container(
-                  margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width*0.07,
-                      vertical: MediaQuery.of(context).size.width*0.04),
+
+                  width: MediaQuery.of(context).size.width,
+                  padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width*0.07,
+                     vertical: MediaQuery.of(context).size.width*0.04),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -172,7 +175,9 @@ class MyHomePage extends StatelessWidget {
                   )
               ),
               Container(
-                  margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width*0.07,
+                  width: MediaQuery.of(context).size.width,
+
+                  padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width*0.07,
                       vertical: MediaQuery.of(context).size.width*0.04),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
